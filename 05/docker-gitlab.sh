@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# HOW TO RUN gitlab on docker
+#  HOW TO RUN gitlab on docker
 #
 
 docker run --detach \
