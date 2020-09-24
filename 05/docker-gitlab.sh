@@ -1,5 +1,7 @@
 #!/bin/bash
+#
 # HOW TO RUN gitlab on docker
+#
 
 docker run --detach \
   --hostname gitlab.example.com \
