@@ -12,3 +12,5 @@ docker run --detach \
   --volume $GITLAB_HOME/logs:/var/log/gitlab \
   --volume $GITLAB_HOME/data:/var/opt/gitlab \
   gitlab/gitlab-ee:latest
+
+# pycharm
