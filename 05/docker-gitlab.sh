@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# HOW TO RUN gitlab on docker
+#  HOW TO RUN gitlab on docker
 #
 
 docker run --detach \
@@ -12,3 +12,5 @@ docker run --detach \
   --volume $GITLAB_HOME/logs:/var/log/gitlab \
   --volume $GITLAB_HOME/data:/var/opt/gitlab \
   gitlab/gitlab-ee:latest
+
+# pycharm
