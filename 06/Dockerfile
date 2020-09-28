@@ -21,3 +21,14 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git;
 RUN cd "$a_HOME/boxfuse-sample-java-war-hello"; mvn package;
 RUN cp /home/06e/boxfuse-sample-java-war-hello/target/hello-1.0.war /usr/local/tomcat/webapps
+
+# jdk+git+maven??? 366 | 666
+#test                latest              cad424ee8173        18 seconds ago      666MB
+#tomcat              8.0                 ef6a7c98d192        2 years ago         356MB
+
+# порт
+EXPOSE 8080
+
+#запускаем скрипт по ману томката
+CMD ["catalina.sh", "run"]
+
