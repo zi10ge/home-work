@@ -19,6 +19,9 @@ WORKDIR $a_HOME
 #test                latest              cad424ee8173        18 seconds ago      666MB
 #tomcat              8.0                 ef6a7c98d192        2 years ago         356MB
 #попробовать всё в одном слое делать, после сборки вычищать?
+#итог
+#test                latest              01e8da113a1c        4 minutes ago       453MB
+# где то ещё ~100мб потерялось :)
 
 RUN apt-get update && apt-get install -y \
     default-jdk \
@@ -34,8 +37,8 @@ RUN apt-get update && apt-get install -y \
     git \
     maven \
     && apt-get autoremove --purge -y \
-    && rm -rf /var/lib/apt/lists/*
-
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 # порт
 EXPOSE 8080
 
